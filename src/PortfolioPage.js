@@ -1,0 +1,128 @@
+import React from "react";
+
+const projects = [
+  {
+    title: "简单项目1",
+    description: "这是一个简单的项目",
+    emoji: "📚",
+    difficulty: "easy",
+  },
+  {
+    title: "简单项目2",
+    description: "另一个简单的项目",
+    emoji: "💻",
+    difficulty: "easy",
+  },
+  {
+    title: "中等项目1",
+    description: "这是一个中等难度的项目",
+    emoji: "🗄️",
+    difficulty: "medium",
+  },
+  {
+    title: "中等项目2",
+    description: "另一个中等难度的项目",
+    emoji: "🖥️",
+    difficulty: "medium",
+  },
+  {
+    title: "中等项目3",
+    description: "第三个中等难度的项目",
+    emoji: "🌐",
+    difficulty: "medium",
+  },
+  {
+    title: "困难项目1",
+    description: "这是一个困难的项目",
+    emoji: "🤖",
+    difficulty: "hard",
+  },
+  {
+    title: "困难项目2",
+    description: "另一个困难的项目",
+    emoji: "👤",
+    difficulty: "hard",
+  },
+];
+
+const difficultyColor = {
+  easy: "from-green-300 to-green-500",
+  medium: "from-yellow-300 to-yellow-500",
+  hard: "from-red-300 to-red-500",
+};
+
+const ProjectCard = ({ project, position, isLeft }) => (
+  <div
+    className={`absolute ${isLeft ? "right-[52%]" : "left-[52%]"}`}
+    style={{ top: `${position}px` }}
+  >
+    <div
+      className={`w-44 p-4 rounded-lg shadow-lg ${
+        difficultyColor[project.difficulty]
+      } bg-gradient-to-r`}
+    >
+      <div className="text-3xl mb-2">{project.emoji}</div>
+      <h3 className="text-lg font-bold mb-1">{project.title}</h3>
+      <p className="text-sm">{project.description}</p>
+    </div>
+  </div>
+);
+
+const PortfolioPage = () => {
+  const cardSpacing = 200; // 每个卡片之间的间距
+  const totalHeight = projects.length * cardSpacing;
+
+  // 生成垂直蜿蜒路径的点
+  const pathPoints = [];
+  for (let i = 0; i <= totalHeight; i += 10) {
+    pathPoints.push(`${50 + Math.sin(i / 50) * 20},${(i / totalHeight) * 100}`);
+  }
+  const svgPath = `M${pathPoints.join(" ")}`;
+
+  // 计算项目卡片的位置
+  const cardPositions = projects.map((_, index) => index * cardSpacing);
+
+  return (
+    <div className="flex min-h-screen bg-gray-100">
+      {/* 个人信息侧边栏 */}
+      <div className="w-1/4 bg-white p-6 shadow-lg z-20 fixed h-full overflow-auto">
+        <h1 className="text-2xl font-bold mb-4">我的名字</h1>
+        <p className="mb-2">前端开发者</p>
+        <p className="mb-2">邮箱：example@email.com</p>
+        <p>Github: github.com/myusername</p>
+      </div>
+
+      {/* 项目展示区域 */}
+      <div className="w-3/4 ml-[25%] p-6 relative">
+        <h2 className="text-3xl font-bold mb-8 text-center sticky top-0 bg-gray-100 z-10">
+          我的项目
+        </h2>
+
+        <div className="relative" style={{ height: `${totalHeight}px` }}>
+          {/* 蜿蜒的路径 */}
+          <svg
+            className="absolute left-0 top-0 w-full h-full"
+            preserveAspectRatio="none"
+            viewBox={`0 0 100 100`}
+          >
+            <path d={svgPath} fill="none" stroke="#a0aec0" strokeWidth="3" />
+          </svg>
+
+          {/* 项目卡片 */}
+          <div className="relative z-10">
+            {projects.map((project, index) => (
+              <ProjectCard
+                key={index}
+                project={project}
+                position={cardPositions[index]}
+                isLeft={index % 2 === 0}
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default PortfolioPage;
