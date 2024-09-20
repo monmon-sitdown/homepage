@@ -75,7 +75,7 @@ const PortfolioPage = () => {
   // 生成垂直蜿蜒路径的点
   const pathPoints = [];
   for (let i = 0; i <= totalHeight; i += 10) {
-    pathPoints.push(`${50 + Math.sin(i / 50) * 20},${(i / totalHeight) * 100}`);
+    pathPoints.push(`${50 + Math.sin(i / 50) * 10},${(i / totalHeight) * 100}`);
   }
   const svgPath = `M${pathPoints.join(" ")}`;
 
@@ -105,7 +105,25 @@ const PortfolioPage = () => {
             preserveAspectRatio="none"
             viewBox={`0 0 100 100`}
           >
-            <path d={svgPath} fill="none" stroke="#a0aec0" strokeWidth="3" />
+            <defs>
+              <linearGradient
+                id="pathGradient"
+                x1="0%"
+                y1="0%"
+                x2="0%"
+                y2="100%"
+              >
+                <stop offset="0%" stopColor="#95f777" />
+                <stop offset="100%" stopColor="#fe584f" />
+              </linearGradient>
+            </defs>
+
+            <path
+              d={svgPath}
+              fill="none"
+              stroke="url(#pathGradient)"
+              strokeWidth="5"
+            />
           </svg>
 
           {/* 项目卡片 */}
