@@ -2,10 +2,12 @@ import React from "react";
 
 const projects = [
   {
-    title: "简单项目1",
-    description: "这是一个简单的项目",
+    title: "Simple Storage",
+    description:
+      "This is the first step in my Solidity journey. The SimpleStorage Project implements a simple smart contract to store and retrieve numbers, and includes a React application to interact with the smart contract from the front end. Although it only implements an extremely simple function, it is a huge step forward for me.",
     emoji: "📚",
     difficulty: "easy",
+    link: "https://simplestoragefrontend.netlify.app",
   },
   {
     title: "简单项目2",
@@ -57,25 +59,38 @@ const ProjectCard = ({ project, position, isLeft }) => (
     style={{ top: `${position}px` }}
   >
     <div
-      className={`w-44 p-4 rounded-lg shadow-lg ${
+      className={`p-4 rounded-lg shadow-lg ${
         difficultyColor[project.difficulty]
       } bg-gradient-to-r`}
+      style={{ width: "450px", height: "200px" }} // 设置卡片的宽度和高度
     >
-      <div className="text-3xl mb-2">{project.emoji}</div>
-      <h3 className="text-lg font-bold mb-1">{project.title}</h3>
+      <div className="text-lg font-bold mb-1">
+        {project.emoji}
+        {project.title}
+      </div>
+      {project.link && (
+        <a
+          href={project.link}
+          className="text-sm text-blue-500 underline mb-1 block"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {project.link}
+        </a>
+      )}
       <p className="text-sm">{project.description}</p>
     </div>
   </div>
 );
 
 const PortfolioPage = () => {
-  const cardSpacing = 200; // 每个卡片之间的间距
+  const cardSpacing = 220; // 每个卡片之间的间距，路宽
   const totalHeight = projects.length * cardSpacing;
 
   // 生成垂直蜿蜒路径的点
   const pathPoints = [];
   for (let i = 0; i <= totalHeight; i += 10) {
-    pathPoints.push(`${50 + Math.sin(i / 50) * 10},${(i / totalHeight) * 100}`);
+    pathPoints.push(`${50 + Math.sin(i / 40) * 15},${(i / totalHeight) * 150}`);
   }
   const svgPath = `M${pathPoints.join(" ")}`;
 
