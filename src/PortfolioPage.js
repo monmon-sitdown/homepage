@@ -10,37 +10,41 @@ const projects = [
     link: "https://simplestoragefrontend.netlify.app",
   },
   {
-    title: "简单项目2",
-    description: "另一个简单的项目",
+    title: "Simple Voting",
+    description:
+      "Next I created a Simple Voting DApp with more interactions, designed to facilitate a voting process on the blockchain. Built on the Ganache network, this DApp allows users to cast votes for their preferred candidates in an efficient manner. Users can easily connect their MetaMask wallets to participate in the voting process.",
     emoji: "💻",
     difficulty: "easy",
+    link: "https://simple-voting.netlify.app/",
   },
   {
-    title: "中等项目1",
-    description: "这是一个中等难度的项目",
+    title: "NFT(Basic & Dynamic)",
+    description:
+      "My Solidity journey has reached the ERC721 stage. Through my studies, I uploaded a simple image and turned it into a basic NFT. Afterwards, I did some research on SVG and created a simple dynamic NFT. The code of the dynamic one can be found in the link above. You can follow the steps in README to get the NFT on testnet.",
     emoji: "🗄️",
-    difficulty: "medium",
+    difficulty: "easy",
+    link: "https://github.com/monmon-sitdown/NFTClock",
   },
   {
-    title: "中等项目2",
+    title: "Simple Loan System",
     description: "另一个中等难度的项目",
     emoji: "🖥️",
     difficulty: "medium",
   },
   {
-    title: "中等项目3",
+    title: "Simple Dex Platform",
     description: "第三个中等难度的项目",
     emoji: "🌐",
     difficulty: "medium",
   },
   {
-    title: "困难项目1",
+    title: "Stable Coin",
     description: "这是一个困难的项目",
     emoji: "🤖",
     difficulty: "hard",
   },
   {
-    title: "困难项目2",
+    title: "AI NFT Minting",
     description: "另一个困难的项目",
     emoji: "👤",
     difficulty: "hard",
@@ -62,7 +66,7 @@ const ProjectCard = ({ project, position, isLeft }) => (
       className={`p-4 rounded-lg shadow-lg ${
         difficultyColor[project.difficulty]
       } bg-gradient-to-r`}
-      style={{ width: "450px", height: "200px" }} // 设置卡片的宽度和高度
+      style={{ width: "450px", height: "200px", textAlign: "justify" }} // 设置卡片的宽度和高度
     >
       <div className="text-lg font-bold mb-1">
         {project.emoji}
@@ -109,8 +113,8 @@ const PortfolioPage = () => {
 
       {/* 项目展示区域 */}
       <div className="w-3/4 ml-[25%] p-6 relative">
-        <h2 className="text-3xl font-bold mb-8 text-center sticky top-0 bg-gray-100 z-10">
-          我的项目
+        <h2 className="text-3xl font-bold mb-8 text-center sticky top-0 bg-gray-100 z-20">
+          My Solidity Journey
         </h2>
 
         <div className="relative" style={{ height: `${totalHeight}px` }}>
