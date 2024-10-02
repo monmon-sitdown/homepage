@@ -26,16 +26,20 @@ const projects = [
     link: "https://github.com/monmon-sitdown/NFTClock",
   },
   {
-    title: "Simple Loan System",
-    description: "另一个中等难度的项目",
+    title: "Simple Lending System",
+    description:
+      "After completing the above learning, to further understand what ERC20 is, I attempted to develop a simple lending system. It implements the functionality for depositing and withdrawing funds to/from the contract, as well as borrowing and repaying loans. The code can be found at the above link. For the demo video, please click: link.",
     emoji: "🖥️",
     difficulty: "medium",
+    link: "https://github.com/monmon-sitdown/defilend-frontend",
   },
   {
     title: "Simple Dex Platform",
-    description: "第三个中等难度的项目",
+    description:
+      "After those studies and practices, I decided to start challenging myself with more complex projects. The decentralized exchange (DEX) projects includes the functions that can create liquidity pools, swap tokens, and manage user positions. In addition, I also learned some techs to make the website more visually appealing. The development process was a great challenge and quite painful, but despite its simplicity, I gained a lot from it.",
     emoji: "🌐",
     difficulty: "medium",
+    link: "https://github.com/monmon-sitdown/dex-frontend",
   },
   {
     title: "Stable Coin",
@@ -66,7 +70,7 @@ const ProjectCard = ({ project, position, isLeft }) => (
       className={`p-4 rounded-lg shadow-lg ${
         difficultyColor[project.difficulty]
       } bg-gradient-to-r`}
-      style={{ width: "450px", height: "200px", textAlign: "justify" }} // 设置卡片的宽度和高度
+      style={{ width: "450px", height: "230px", textAlign: "justify" }} // 设置卡片的宽度和高度
     >
       <div className="text-lg font-bold mb-1">
         {project.emoji}
@@ -88,7 +92,7 @@ const ProjectCard = ({ project, position, isLeft }) => (
 );
 
 const PortfolioPage = () => {
-  const cardSpacing = 220; // 每个卡片之间的间距，路宽
+  const cardSpacing = 230; // 每个卡片之间的间距，路宽
   const totalHeight = projects.length * cardSpacing;
 
   // 生成垂直蜿蜒路径的点
