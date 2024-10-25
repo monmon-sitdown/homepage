@@ -1,12 +1,10 @@
-// App.js
 import React from "react";
-import Portfolio from "./components/Portfolio";
-import "./App.css";
+import PortfolioPage from "./PortfolioPage"; // 确保路径正确
 
 function App() {
   return (
     <div className="App">
-      <Portfolio />
+      <PortfolioPage />
     </div>
   );
 }
