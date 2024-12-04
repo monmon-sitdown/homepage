@@ -15,7 +15,7 @@ body {
   fill: none;
   stroke-dasharray: 75, 10; /* 设置虚线，10是线的长度，10是空白的长度 */
   stroke-dashoffset: 0;
-  animation: dashFlow 30s linear infinite, glowPulse 8s ease-in-out infinite; /* 应用动画 */
+  animation: dashFlow 30s linear infinite, glowPulse 2.5s ease-in-out infinite; /* 应用动画 */
 }
 
 @keyframes dashFlow {
@@ -39,3 +39,20 @@ body {
     stroke-opacity: 0.4;
   }
 }
+
+@keyframes hoverEffect {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); /* 向上移动10像素 */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon-hover {
+  animation: hoverEffect 2s ease-in-out infinite; /* 1秒动画，循环 */
+}
+
