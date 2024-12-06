@@ -46,7 +46,7 @@ const projects = [
       </a>.
       </>
     ),
-    link: "https://simple-voting.netlify.app/",
+    link: "https://github.com/monmon-sitdown/SimpleVoting/tree/master/foundry-voting",
     icon: Vote,
     difficulty: 2
   },
