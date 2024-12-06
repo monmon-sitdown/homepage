@@ -208,7 +208,14 @@ const Portfolio = () => {
       I aim to contribute to the Web3 ecosystem through innovative and secure smart contract development.
     </p>
     <a 
-      href="/path-to-your-resume.pdf" 
+      href="https://www.linkedin.com/in/xiuyuan-qin-9b01872ab/" 
+      target="_blank" 
+      className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded hover:shadow-lg transition">
+      LinkedIn
+    </a>
+
+    <a 
+      href="https://github.com/monmon-sitdown/homepage/blob/master/file/resume.md" 
       target="_blank" 
       className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded hover:shadow-lg transition">
       Resume
