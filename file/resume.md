@@ -55,7 +55,7 @@ Xiuyuan Qin has over seven years of experience as an academic researcher, primar
 
 ## Solidity Projects (Personal Development)
 
-### [Personal Website]
+### [Personal Webpage]
 
 https://monmon-solidityjourney.netlify.app/
 
