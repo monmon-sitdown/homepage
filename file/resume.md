@@ -66,7 +66,7 @@ https://monmon-solidityjourney.netlify.app/
 - **NFT Minting on Ethereum**: Uses Ethers.js for seamless interaction with the Ethereum blockchain, allowing users to mint NFTs from the uploaded images.
 - **React Framework for User Interface**: The front end is developed using React, providing a responsive and intuitive user experience for easy navigation and interaction with the DApp.
 - **Technologies Used**: Solidity (Foundry), React, Generated AI (OpenAI API)
-- [**Demo Link**](https://youtu.be/Obr_XNQkYHs) [**Solidity Code**](https://github.com/monmon-sitdown/ainft)
+- [**Demo Video**](https://youtu.be/Obr_XNQkYHs) [**Solidity Code**](https://github.com/monmon-sitdown/ainft)
 
 #### Simple Dex Platform (On Ganache)
 
@@ -75,7 +75,7 @@ https://monmon-solidityjourney.netlify.app/
 - **Wallet Integration**: Incorporates Ethereum wallet connection (e.g., MetaMask) to facilitate user interaction with the decentralized exchange.
 - **Liquidity Pool Management and Token Swapping**: Allows users to create and manage liquidity pools, leveraging smart contract functionalities for seamless token swapping.
 - **Technologies Used**: Solidity (Foundry), React, Node.js, Ganache
-- [**Demo Link**](https://youtu.be/VgzioPEOT_s) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-dex)
+- [**Demo Video**](https://youtu.be/VgzioPEOT_s) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-dex)
 
 #### Simple Stable Coin (On Anvil)
 
@@ -84,7 +84,7 @@ https://monmon-solidityjourney.netlify.app/
 - **Stablecoin Redemption and Collateral Release**: Users can redeem their SSC tokens to release their collateral, ensuring that users can always unlock their funds once their debt is repaid.
 - **Automated Liquidation Mechanism**: The platform includes a liquidation function that ensures that accounts with insufficient collateral are liquidated to maintain overall system stability, automatically covering outstanding debt.
 - **Technologies Used**: Solidity (Foundry), React, Anvil, DAI-like design
-- [**Demo Link**](https://youtu.be/OlcqjPedY1w) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-stablecoin)
+- [**Demo Video**](https://youtu.be/OlcqjPedY1w) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-stablecoin)
 
 ---
 
