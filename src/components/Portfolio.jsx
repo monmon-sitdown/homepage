@@ -210,13 +210,14 @@ const Portfolio = () => {
     <a 
       href="https://www.linkedin.com/in/xiuyuan-qin-9b01872ab/" 
       target="_blank" 
+      rel="noopener noreferrer"
       className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded hover:shadow-lg transition">
       LinkedIn
     </a>
-
     <a 
       href="https://github.com/monmon-sitdown/homepage/blob/master/file/resume.md" 
       target="_blank" 
+      rel="noopener noreferrer"
       className="inline-block mt-2 px-4 py-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white font-medium rounded hover:shadow-lg transition">
       Resume
     </a>
@@ -224,7 +225,7 @@ const Portfolio = () => {
 
   {/* Skills Section */}
 <div className="space-y-4 text-center">
-<h3 className="text-2xl font-semibold text-transparent text-gray-100">
+<h3 className="text-2xl font-semibold">
   Skills
 </h3>
   <div className="flex flex-wrap justify-center gap-4">
