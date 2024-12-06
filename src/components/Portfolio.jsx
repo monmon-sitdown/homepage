@@ -8,14 +8,15 @@ import {
   Wallet, 
   ArrowLeftRight,
   Coins,
-  Bot
+  Bot,
+  Rocket
 } from 'lucide-react';
 
 const projects = [
   {
     id: 1,
     title: "Simple Storage",
-    description: "This is the first step in my Solidity journey. The SimpleStorage Project implements a simple smart contract to store and retrieve numbers, and includes a React application to interact with the smart contract from the front end. Although it only implements an extremely simple function, it is a huge step forward for me.",
+    description: "This marks the initial step in my Solidity journey. The SimpleStorage Project involves a smart contract that allows storing and retrieving numerical data, complemented by a React application for frontend interaction. While its functionality is minimal, this project represents a significant milestone in my learning and development. Click the icon to visit the demo page.",
     link: "https://simplestoragefrontend.netlify.app",
     icon: BookOpen,
     difficulty: 1
@@ -25,8 +26,8 @@ const projects = [
     title: "Simple Voting",
     description: (
       <>
-        Next I created a Simple Voting DApp with more interactions, designed to facilitate a voting process on the blockchain. Built on the Ganache network, this DApp allows users to cast votes for their preferred candidates in an efficient manner. Users can easily connect their MetaMask wallets to participate in the voting process. Check the Demo Video {" "}
-        <a 
+      Next, I developed a Simple Voting DApp with enhanced interactivity, designed to streamline the voting process on the blockchain. Deployed on the Ganache network, this DApp enables users to cast votes for their preferred candidates efficiently. It also features seamless integration with MetaMask, allowing users to connect their wallets and participate in the voting process. Watch the Demo Video {" "}
+      <a
         href="https://youtu.be/ZDsixEww27E" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -54,7 +55,7 @@ const projects = [
     title: "NFT(Basic & Dynamic)",
     description: (
       <>
-      My Solidity journey has reached the ERC721 stage. Through my studies, I uploaded a simple image and turned it into a basic NFT. Afterwards, I did some research on SVG and created a simple dynamic NFT. You can click the icon to find the solidity code of the dynamic one. You can follow the steps in README to get the NFT on testnet. Solidity Code {" "}
+      My Solidity journey has advanced to the ERC721 standard. As part of my studies, I developed a basic NFT by uploading a static image and minting it as a token. Subsequently, I explored SVG technology and created a dynamic NFT. Click the icon to view the Solidity code for the dynamic NFT. Solidity Code {" "}
       <a 
         href="https://github.com/monmon-sitdown/NFTClock" 
         target="_blank" 
@@ -82,9 +83,9 @@ const projects = [
         className="text-blue-500 hover:text-blue-700"
       >
         here
-      </a>.
-      After completing the above learning, to further understand what ERC20 is, I attempted to develop a simple lending system. It implements the functionality for depositing and withdrawing funds to/from the contract, as well as borrowing and repaying loans. You can click the icon to find the Solidity Code.
-      </>
+        </a>.
+        After completing the foundational learning, I aimed to deepen my understanding of ERC20 by developing a simple lending system. This project implements core functionalities, including depositing and withdrawing funds from the contract, as well as borrowing and repaying loans. Click the icon to explore the Solidity code.
+        </>
     ),
     link: "https://github.com/monmon-sitdown/foundry-defilendingplatform",
     icon: Wallet,
@@ -95,8 +96,8 @@ const projects = [
     title: "Simple Dex Platform",
     description:(
       <>
-      After those studies and practices, I decided to start challenging myself with more complex projects. The decentralized exchange (DEX) projects includes the functions that can create liquidity pools, swap tokens, and manage user positions. In addition, I also learned some techs to make the website more visually appealing. The development process was a great challenge and quite painful, but despite its simplicity, I gained a lot from it. Demo Video {" "}
-      <a 
+      Building on my foundational studies and practices, I decided to challenge myself with more advanced projects. The decentralized exchange (DEX) project incorporates features such as creating liquidity pools, token swaps, and managing user positions. Additionally, I explored techniques to enhance the website's visual appeal. While the development process was demanding and often challenging, it provided invaluable learning opportunities. Despite its simplicity, this project significantly contributed to my growth. Demo Video {" "}
+      <a  
         href="https://youtu.be/VgzioPEOT_s" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -115,8 +116,8 @@ const projects = [
     title: "Simple Stable Coin",
     description: (
       <>
-      The CollateralManager enables users to deposit wETH as collateral, calculate its value via Chainlink price feeds, and mint SimpleStableCoins (SSC) based on strict collateralization ratios. Users can withdraw or redeem collateral if their health factor is sufficient. In cases where collateral falls below the required threshold, liquidation protects the system. These features ensure secure and efficient collateral management for stablecoin minting. Demo Video {" "}
-      <a 
+      The CollateralManager facilitates efficient collateral management for stablecoin minting. Users can deposit wETH as collateral, with its value determined through Chainlink price feeds, and mint SimpleStableCoins (SSC) in accordance with stringent collateralization ratios. The system allows collateral withdrawal or redemption, provided the user maintains a sufficient health factor. In the event of insufficient collateral, a liquidation mechanism ensures system stability. Demo Video {" "}
+      <a
         href="https://youtu.be/OlcqjPedY1w" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -135,8 +136,8 @@ const projects = [
     title: "AI NFT Minting",
     description: (
       <>
-      I made some practice by coding for typical Web3 project. However, this program was considered by myself, which is plan to combine AI and NFT. Using AI to generate NFT, and mint it or uploaded to NFT market. Without any references, it was quite a challenge for me. Please check the demo {" "}
-      <a 
+        I worked on a self-conceived Web3 project that integrates AI and NFTs, aiming to push my skills further. This project involves using AI to generate NFTs, which can then be minted. Without external references or guides, it presented a significant challenge and allowed me to explore uncharted territory in blockchain development. Please check the demo {" "}
+      <a
         href="https://youtu.be/Obr_XNQkYHs" 
         target="_blank" 
         rel="noopener noreferrer"
@@ -148,6 +149,17 @@ const projects = [
     ),
     link: "https://github.com/monmon-sitdown/ainft",
     icon: Bot,
+    difficulty: 7
+  },
+  {
+    id: 8,
+    title: "To be continued...",
+    description: (
+      <>
+      The blockchain world is advancing at lightning speed, constantly evolving with new innovations. To keep up with the times and truly master this technology, one must embrace continuous learning and relentless practice. I am committed to growing, improving, and staying ahead in this ever-changing field...
+    </>
+    ),
+    icon: Rocket, 
     difficulty: 7
   }
 ];
@@ -192,7 +204,7 @@ const Portfolio = () => {
   <div className="space-y-4">
     <h2 className="text-xl font-semibold">Resume</h2>
     <p className="text-gray-400 text-justify">
-      With over 7 years of academic research experience and a recent deep dive into blockchain technologies, 
+      With years of academic research experience and a recent deep dive into blockchain technologies, 
       I aim to contribute to the Web3 ecosystem through innovative and secure smart contract development.
     </p>
     <a 
@@ -246,6 +258,17 @@ const Portfolio = () => {
 <div className="space-y-4">
   <h3 className="text-xl font-semibold">Portfolio</h3>
   <ul className="space-y-3">
+  <li className="text-gray-400">
+    <strong>Simple Storage</strong>:{" "}
+    <a 
+        href="https://simplestoragefrontend.netlify.app" 
+        className="text-blue-400 hover:underline" 
+        target="_blank" 
+        rel="noopener noreferrer"
+      >
+        Link
+      </a>{" "}
+      </li>
     <li className="text-gray-400">
       <strong>Simple Voting</strong>:{" "}
       <a 
