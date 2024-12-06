@@ -57,6 +57,8 @@ Xiuyuan Qin has over seven years of experience as an academic researcher, primar
 
 ### [Personal Website]
 
+https://monmon-solidityjourney.netlify.app/
+
 #### Simple Stable Coin (On Anvil)
 
 - **Collateralized Stablecoin Minting**: Users can deposit collateral (wETH) into the platform and mint SSC tokens, which are algorithmically pegged to the value of $1.00. The system ensures that only users with sufficient collateral can mint new stablecoins.

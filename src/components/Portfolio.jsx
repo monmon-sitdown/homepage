@@ -195,7 +195,7 @@ const Portfolio = () => {
   <div className="space-y-4">
     <h2 className="text-xl font-semibold">About Me</h2>
     <p className="text-gray-400 text-justify" >
-      A passionate blockchain developer transitioning from biomedical research to Web3. 
+      A passionate blockchain rookie transitioning from biomedical research to Web3. 
       I have completed multiple simple Solidity Demos, including DApps, NFTs, and DeFi platforms.
     </p>
   </div>
