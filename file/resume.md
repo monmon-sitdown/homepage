@@ -66,8 +66,8 @@ https://monmon-solidityjourney.netlify.app/
 - **Stablecoin Redemption and Collateral Release**: Users can redeem their SSC tokens to release their collateral, ensuring that users can always unlock their funds once their debt is repaid.
 - **Automated Liquidation Mechanism**: The platform includes a liquidation function that ensures that accounts with insufficient collateral are liquidated to maintain overall system stability, automatically covering outstanding debt.
 - **Technologies Used**: Solidity (Foundry), React, Anvil, DAI-like design
-- **Demo Link**:
-- **Solidity Code**:
+- [**Demo Link**](https://youtu.be/OlcqjPedY1w) [https://www.linkedin.com/in/xiuyuan-qin-9b01872ab/](https://www.linkedin.com/in/xiuyuan-qin-9b01872ab/)
+- **Solidity Code**: https://github.com/monmon-sitdown/foundry-stablecoin
 
 #### Simple Dex Platform (On Ganache)
 
