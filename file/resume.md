@@ -59,14 +59,14 @@ Xiuyuan Qin has over seven years of experience as an academic researcher, primar
 
 https://monmon-solidityjourney.netlify.app/
 
-#### Simple Stable Coin (On Anvil)
+#### AI NFT Minter (On Sepolia Testnet)
 
-- **Collateralized Stablecoin Minting**: Users can deposit collateral (wETH) into the platform and mint SSC tokens, which are algorithmically pegged to the value of $1.00. The system ensures that only users with sufficient collateral can mint new stablecoins.
-- **Collateral Management and Monitoring**: The platform allows users to deposit and track their collateral balance, both in ETH and its USD equivalent. The health factor of user accounts is calculated to help prevent liquidation events.
-- **Stablecoin Redemption and Collateral Release**: Users can redeem their SSC tokens to release their collateral, ensuring that users can always unlock their funds once their debt is repaid.
-- **Automated Liquidation Mechanism**: The platform includes a liquidation function that ensures that accounts with insufficient collateral are liquidated to maintain overall system stability, automatically covering outstanding debt.
-- **Technologies Used**: Solidity (Foundry), React, Anvil, DAI-like design
-- [**Demo Link**](https://youtu.be/OlcqjPedY1w) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-stablecoin)
+- **Image Generation**: Utilizes OpenAI's API to generate images based on user-provided descriptions, leveraging advanced AI models for high-quality image creation.
+- **IPFS Integration**: Employs Pinata to upload generated images to the Inter Planetary File System (IPFS), ensuring decentralized and reliable storage of NFT metadata.
+- **NFT Minting on Ethereum**: Uses Ethers.js for seamless interaction with the Ethereum blockchain, allowing users to mint NFTs from the uploaded images.
+- **React Framework for User Interface**: The front end is developed using React, providing a responsive and intuitive user experience for easy navigation and interaction with the DApp.
+- **Technologies Used**: Solidity (Foundry), React, Generated AI (OpenAI API)
+- [**Demo Link**](https://youtu.be/Obr_XNQkYHs) [**Solidity Code**](https://github.com/monmon-sitdown/ainft)
 
 #### Simple Dex Platform (On Ganache)
 
@@ -77,14 +77,14 @@ https://monmon-solidityjourney.netlify.app/
 - **Technologies Used**: Solidity (Foundry), React, Node.js, Ganache
 - [**Demo Link**](https://youtu.be/VgzioPEOT_s) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-dex)
 
-#### AI NFT Minter (On Sepolia Testnet)
+#### Simple Stable Coin (On Anvil)
 
-- **Image Generation**: Utilizes OpenAI's API to generate images based on user-provided descriptions, leveraging advanced AI models for high-quality image creation.
-- **IPFS Integration**: Employs Pinata to upload generated images to the Inter Planetary File System (IPFS), ensuring decentralized and reliable storage of NFT metadata.
-- **NFT Minting on Ethereum**: Uses Ethers.js for seamless interaction with the Ethereum blockchain, allowing users to mint NFTs from the uploaded images.
-- **React Framework for User Interface**: The front end is developed using React, providing a responsive and intuitive user experience for easy navigation and interaction with the DApp.
-- **Technologies Used**: Solidity (Foundry), React, Generated AI (OpenAI API)
-- [**Demo Link**](https://youtu.be/Obr_XNQkYHs) [**Solidity Code**](https://github.com/monmon-sitdown/ainft)
+- **Collateralized Stablecoin Minting**: Users can deposit collateral (wETH) into the platform and mint SSC tokens, which are algorithmically pegged to the value of $1.00. The system ensures that only users with sufficient collateral can mint new stablecoins.
+- **Collateral Management and Monitoring**: The platform allows users to deposit and track their collateral balance, both in ETH and its USD equivalent. The health factor of user accounts is calculated to help prevent liquidation events.
+- **Stablecoin Redemption and Collateral Release**: Users can redeem their SSC tokens to release their collateral, ensuring that users can always unlock their funds once their debt is repaid.
+- **Automated Liquidation Mechanism**: The platform includes a liquidation function that ensures that accounts with insufficient collateral are liquidated to maintain overall system stability, automatically covering outstanding debt.
+- **Technologies Used**: Solidity (Foundry), React, Anvil, DAI-like design
+- [**Demo Link**](https://youtu.be/OlcqjPedY1w) [**Solidity Code**](https://github.com/monmon-sitdown/foundry-stablecoin)
 
 ---
 
